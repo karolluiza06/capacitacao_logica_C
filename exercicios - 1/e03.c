@@ -13,7 +13,7 @@ int main() {
 
     // Faça a comparação aqui:
 
-
+    result= A>B;
     // Código de validação
     if (result == 0) {
         printf("O resultado está correto, muito bem!!\n");

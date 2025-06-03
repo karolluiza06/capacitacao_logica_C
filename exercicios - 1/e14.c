@@ -12,7 +12,7 @@ int main() {
     scanf("%f", &fahrenheit);
 
     // Complete o código
-    celsius = ???
+    celsius = (5.0/9.0 )* (fahrenheit - 32);
 
     // Exibe o resultado com duas casas decimais
     printf("Temperatura em Celsius: %.2f°C\n", celsius);

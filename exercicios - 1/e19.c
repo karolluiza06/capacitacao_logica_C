@@ -12,7 +12,7 @@
 
 int main() {
     int v[5];  // declara um vetor de 5 posições
-    int soma, i;
+    int soma, i,subtracao=0;
 
     printf("Por favor, digite 5 inteiros:\n");
     for (i = 0; i < 5; i++) {
@@ -29,9 +29,14 @@ int main() {
     // Calcula soma dos números do vetor
     soma = 0;
     for (i = 0; i < 5; i++) {
+        if(v[i]%2==0)
         soma += v[i];  // Soma cada número do vetor, conforme seu índice i
+        else{
+            subtracao-=v[i];
+        }
     }
-    printf("A soma dos números é: %d\n", soma);
+    printf("A soma dos números pares é: %d\n", soma);
+    printf("A subtração dos números ímpares é: %d\n", subtracao);
 
     return 0;
 }

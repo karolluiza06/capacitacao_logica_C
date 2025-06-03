@@ -12,4 +12,33 @@
     (inclusive na estrutura SWITCH)
     Tente digitar o código manualmente, sem copiar e colar. Em caso de dúvida, consulte os exemplos 07 e 17.
 */
+#include<stdio.h>
+
+int main(){
+    char opcao;
+
+    printf("Digite uma letra:");
+    printf("A - Albert Einstein\n");
+    printf("M - Marie Curie\n");
+    printf("N - Nikola Tesla\n");
+    scanf(" %c",&opcao);
+
+    switch (opcao)
+    {
+    case 'A':
+        printf("Você escolheu Albert Einstein");
+        break;
+     case 'M':
+        printf("Você escolheu Marie Curie");
+        break;
+     case 'N':
+        printf("Você escolheu Nikola Tesla");
+        break;
+    
+    default:
+        printf("Opção inválida!");
+        break;
+    }
+    return 0;
+}
 

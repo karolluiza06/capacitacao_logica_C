@@ -13,9 +13,9 @@ int main() {
     float pi = 3.14159;
 
     // Complete conforme o enunciado
-    printf( ??? );
-    printf( ??? );
-    printf( ??? );
+    printf("\nO número é %d",a);
+    printf("\nA letra é %c",b);
+    printf("\nO pi é %.2f",pi);
 
     return 0;
 }

@@ -16,13 +16,17 @@
 
 int main() {
     // implementação:
+    int n1,i;
 
+    printf("Digite um número de 1 a 10:");
+    scanf("%d",&n1);
 
+    if(n1<0 && n1>10){
+        printf("Número inválido");
+    }
 
-
-
-
-
-
+    for(i=1;i<=10;i++){
+        printf("\n%d X %i: %d",n1,i,n1*i);
+    }
     return 0;
 }

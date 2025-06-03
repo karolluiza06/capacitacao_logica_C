@@ -17,13 +17,16 @@ int main() {
     scanf("%f", &altura);
 
     // Calcule a área do triângulo
-    area = ???
+    area = (base * altura) /2;
 
     // Exiba o resultado formatado com duas casas decimais
-    printf( ??? );
+    printf("A area é %.1f\n",area);
 
     // IF/ELSE para verificar se a área é maior que 30
-    ???
+    if(area>30)
+        printf("Triangulo grande");
+    else
+    printf("Triangulo pequeno");
 
     return 0;
 }

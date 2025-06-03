@@ -14,21 +14,24 @@
 int main() {
     int numeros[] = {3, 7, 12, 25, 30};
     int tamanho = 5;
-    int alvo;
+    int alvo,i;
     int encontrado = 0;
 
     printf("Digite um número para buscar no array: ");
     scanf("%d", &alvo);
 
     // Lógica:
-
-
-    
-
+    for(i=0;i<tamanho;i++){
+        if(alvo==numeros[i]){
+        encontrado=1;
+        break;
+        }
+    }
     // Mensagem de resultado:
-
-
-
+      if(encontrado)
+        printf("Número presente");
+    else
+        printf("Número ausente");
 
     return 0;
 }
